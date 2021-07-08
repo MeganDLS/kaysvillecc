@@ -1,0 +1,72 @@
+ /* soft purple #9A8C98 */
+/* dark purple #4A4E69 */
+/* soft pink #C9ADA7 */
+/* Dark blue #22223B*/
+/* cream #F2E9E4 */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #F2E9E4;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Navigation */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #22223B;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #F2E9E4;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #C9ADA7;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+ /* Maing Grid */
+  /* Create four equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
