@@ -7,6 +7,8 @@
 body {
     font-family: 'Open Sans', sans-serif;
     background-color: #F2E9E4;
+    max-width: 75%;
+  margin: 0 auto;
 }
 
 h1 {
@@ -56,6 +58,24 @@ h1 {
   * {
     box-sizing: border-box;
   }
+
+/* Gallery */
+
+.gallerycontainer {
+ display: flex;
+justify-content: space-evenly;
+align-items: center;
+flex-flow: wrap;
+align-content: space-around;
+}
+.gallerychild {
+  background-color: #4A4E69;
+}
+
+.trial1 {
+  flex-grow: .5;
+}
+
  /* Maing Grid */
   /* Create four equal columns that floats next to each other */
   .column {
@@ -63,7 +83,9 @@ h1 {
     width: 25%;
     padding: 10px;
   }
-  
+  .column img {
+    width: 100%;
+  }
   /* Clear floats after the columns */
   .row:after {
     content: "";
