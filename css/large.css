@@ -4,10 +4,15 @@
 /* Dark blue #22223B*/
 /* cream #F2E9E4 */
 
+
+* {
+  box-sizing: border-box;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
     background-color: #F2E9E4;
-    max-width: 75%;
+    max-width: 85%;
   margin: 0 auto;
 }
 
@@ -16,6 +21,24 @@ h1 {
 }
 
 /* Navigation */
+
+#opennav {
+  color:#4A4E69;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+font-weight: bold;
+
+}
+
+#opennav:hover {
+  background-color: #22223B;
+  color:#C9ADA7;
+  padding: .2rem;
+  border-radius: .3rem;
+  border-bottom: 1px solid #4A4E69;
+
+}
+
 .sidenav {
     height: 100%;
     width: 0;
@@ -26,13 +49,13 @@ h1 {
     background-color: #22223B;
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 60px;
+    padding-top: 4rem;
   }
   
   .sidenav a {
-    padding: 8px 8px 8px 32px;
+    padding: .5rem .5rem .5rem 2rem;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 1.5rem;
     color: #F2E9E4;
     display: block;
     transition: 0.3s;
@@ -45,50 +68,43 @@ h1 {
   .sidenav .closebtn {
     position: absolute;
     top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
+    right: 1.5rem;
+    font-size: 2rem;
+    margin-left: 2rem;
   }
 
-  #main {
+  #scoot {
     transition: margin-left .5s;
-    padding: 16px;
+    padding: 1rem;
+    text-align: center;
+    color: #22223B;
+  }
+ footer{
+    transition: margin-left .5s;
+    text-align: center;
   }
 
-  * {
-    box-sizing: border-box;
-  }
-
-/* Gallery */
-
-.gallerycontainer {
- display: flex;
-justify-content: space-evenly;
-align-items: center;
-flex-flow: wrap;
-align-content: space-around;
-}
-.gallerychild {
-  background-color: #4A4E69;
-}
-
-.trial1 {
-  flex-grow: .5;
-}
-
- /* Maing Grid */
-  /* Create four equal columns that floats next to each other */
   .column {
     float: left;
     width: 25%;
-    padding: 10px;
+    background-color: #4A4E69;
+    padding: .2rem;
+    color: #F2E9E4;
   }
   .column img {
     width: 100%;
   }
+
   /* Clear floats after the columns */
   .row:after {
     content: "";
     display: table;
     clear: both;
+  }
+
+  /* Join us */
+
+ul {
+  list-style: none;
+
   }
