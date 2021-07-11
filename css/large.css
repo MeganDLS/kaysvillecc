@@ -102,9 +102,18 @@ font-weight: bold;
     clear: both;
   }
 
+#contactinfo {
+  color: #C9ADA7;
+  padding: .4rem;
+  margin: 1rem;
+}
+
+.block {
+  border: 5px dotted #22223B;
+  padding: .3rem;
+}
   /* Join us */
 
 ul {
   list-style: none;
-
-  }
+}
