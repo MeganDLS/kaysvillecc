@@ -7,7 +7,7 @@ fetch(getURL)
    .then(function (jsonObject) {
   
     let forecast = jsonObject['daily'];
-console.log(forecast);
+
     let e = document.createElement('p');
     e.textContent = forecast[0].temp.day;
 
@@ -21,22 +21,5 @@ console.log(forecast);
  document.querySelector('div.daily').appendChild(e);
  document.querySelector('div.daily').appendChild(f);
  document.querySelector('div.daily').appendChild(g);
-    // let next = 1;
-    // const dayofweek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-    // let d = new Date(x.day);
-    
    
-
-    // next++;
  });
-
-
-// fetch(getURL)
-//   .then((response) => response.json())
-//   .then((jsObject) => {
-
-
-      // document.getElementById('day' + next).textContent = dayofweek[d.getDay()];
-      // document.getElementById('data' + next).textContent = x.main.temp + ' °F';
-  
-    //})
