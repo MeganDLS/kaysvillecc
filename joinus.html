@@ -46,7 +46,8 @@
     </div>
     <div id="scoot">
     <span id="opennav" onclick="openNav()">&#9776; Menu</span>
-<h1>Join the Kaysville City Chamber of Commerce</h1>
+<main>
+    <h1>Join the Kaysville City Chamber of Commerce</h1>
 <p>Our purpose is to grow clower together. To support each other and create a healthy, thriving community.</p>
 <ul> <p>Help us achieve our goals of:</p>
     <li>Providing resources to those in need.</li>
@@ -56,6 +57,78 @@
     <li>Ensuring every member of our community feels welcome.</li>
 </ul>
     </div>
+    <form method="get" action="thanks.html">
+
+        <fieldset>
+            <legend>Contact Information</legend>
+            <label>Full Name
+                <input pattern="[A-Za-z ]{4,}" class="required" type="text" name="fname"
+                    placeholder="Maria Lopez" required></label>
+            <label>Email &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="email" name="email" placeholder="user@email.com"></label>
+            <label>Number &nbsp;&nbsp;
+                <input class="required" type="tel" name="phone" placeholder="###-###-####" required></label>
+            <label>Zipcode &nbsp;&nbsp;
+                <input class="required" type="text" name="zip" required></label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Storm Details</legend>
+            <label>Storm Date<input type="date" name="stormdate"></label>
+            <label>Storm Type
+                <input list="types" name="type" id="type">
+                <datalist id="types">
+                    <option value="Flashflood">Flash Flood</option>
+                    <option value="Hail">Hail</option>
+                    <option value="Hurricane">Hurricane</option>
+                    <option value="Thunderstorm">Thunderstorm</option>
+                    <option value="Tornado">Tornado</option>
+                </datalist>
+            </label>
+            <label>Storm Style
+                <input type="range" value="5" min="1" max="10" step="1" list="tickmarks"
+                    oninput="adjustRange(this.value)" onchange="adjustRange(this.value)">
+                <span id="rangevalue"></span>
+            </label>
+
+            <datalist id="tickmarks">
+                <option value="0">
+                <option value="1">
+                <option value="2">
+                <option value="3">
+                <option value="4">
+                <option value="5">
+                <option value="6">
+                <option value="7">
+                <option value="8">
+                <option value="9">
+                <option value="10">
+            </datalist>
+            <label>Storm Region
+                <select name="regions" id="selectregion" onchange="selectResponse()">
+                    <option value="" disabled selected>Select Region...</option>
+                    <option value="preston">Preston</option>
+                    <option value="soda-springs">Soda Springs</option>
+                    <option value="fish-haven">Fish Haven</option>
+                </select>
+            </label>
+
+            <div id="danger">User in danger?
+                <label><input type=radio name="danger" value="yes"> Yes</label>
+                <label><input type=radio name="danger" value="maybe"> Maybe</label>
+                <label><input type=radio name="danger" value="no"> No</label>
+            </div>
+            <label>Comments
+                <input type="text">
+            </label>
+        </fieldset>
+
+        <input type="submit" value="Create My Storm Sighting" class="sbutton">
+    </form>
+</div>
+
+</main>
+
     <script src="js/navigation.js"></script>
 </body>
 <footer>
