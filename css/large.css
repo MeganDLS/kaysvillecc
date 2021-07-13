@@ -79,6 +79,22 @@ font-weight: bold;
     text-align: center;
     color: #22223B;
   }
+
+  /* Three day forecast */
+  .daily {
+    text-align: right;
+    margin-bottom: -8.7rem;
+    color: white;
+  }
+  .blossom {
+    opacity: 50%;
+  }
+
+.gallerychild {
+  filter: grayscale(70%);
+}
+
+ /* Footer  */
  footer{
     transition: margin-left .5s;
     text-align: center;
