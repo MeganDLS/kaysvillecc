@@ -21,8 +21,12 @@ fetch(requestURL)
   document.querySelector('p.towndata').appendChild(second);
   document.querySelector('p.towndata').appendChild(third);
 
-  let alerts = jsonObject['alerts'];
+
+let alerts = jsonObject['alerts'];
 console.log(alerts);
+let fourth = document.createElement('span');
+document.querySelector('span.alert');
+
 
   // if (alerts != undefined) {
     // warning == 
