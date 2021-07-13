@@ -94,6 +94,25 @@ font-weight: bold;
   filter: grayscale(70%);
 }
 
+/* Directory */
+#directory {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#column1 {
+width: 25%;
+}
+
+#directory img {
+  width: 100%;
+}
+
+
+
+
+
+
  /* Footer  */
  footer{
     transition: margin-left .5s;

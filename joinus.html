@@ -61,69 +61,54 @@
 
         <fieldset>
             <legend>Contact Information</legend>
-            <label>Full Name
-                <input pattern="[A-Za-z ]{4,}" class="required" type="text" name="fname"
-                    placeholder="Maria Lopez" required></label>
-            <label>Email &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <input type="email" name="email" placeholder="user@email.com"></label>
-            <label>Number &nbsp;&nbsp;
-                <input class="required" type="tel" name="phone" placeholder="###-###-####" required></label>
-            <label>Zipcode &nbsp;&nbsp;
-                <input class="required" type="text" name="zip" required></label>
+            <label>First Name
+                <input pattern="[A-Za-z ]{4}" class="required" type="text" name="fname"
+                    placeholder="Maria" required></label>
+                    <label>Last Name
+                        <input pattern="[A-Za-z ]{4}" class="required" type="text" name="fname"
+                            placeholder="Lopez" required></label>
+                            <label>Title
+                                <input pattern="[A-Za-z ]{4}" class="required" type="text" name="fname"
+                                    placeholder="Engineer"></label>
+            <label>Email
+                <input type="email" name="email" placeholder="user@email.com" required></label>
+            <label>Cellphone Number &nbsp;&nbsp;
+                <input class="required" type="tel" name="phone" placeholder="###-###-####"></label>
+            
         </fieldset>
 
         <fieldset>
-            <legend>Storm Details</legend>
-            <label>Storm Date<input type="date" name="stormdate"></label>
-            <label>Storm Type
-                <input list="types" name="type" id="type">
-                <datalist id="types">
-                    <option value="Flashflood">Flash Flood</option>
-                    <option value="Hail">Hail</option>
-                    <option value="Hurricane">Hurricane</option>
-                    <option value="Thunderstorm">Thunderstorm</option>
-                    <option value="Tornado">Tornado</option>
-                </datalist>
-            </label>
-            <label>Storm Style
-                <input type="range" value="5" min="1" max="10" step="1" list="tickmarks"
-                    oninput="adjustRange(this.value)" onchange="adjustRange(this.value)">
-                <span id="rangevalue"></span>
-            </label>
+            <legend>Business Details</legend>
+            <label>Business Name: &nbsp;&nbsp;
+                <input class="required" type="text" name="zip" required></label>
+                <label>Business Address: &nbsp;&nbsp;
+                    <input class="required" type="text" name="zip" required></label>
+                    <label>Website: &nbsp;&nbsp;
+                        <input class="required" type="text" name="zip" required></label>
+                        <label>Business Description: &nbsp;&nbsp;
+                            <input class="required" type="text" name="zip" required></label>      
 
-            <datalist id="tickmarks">
-                <option value="0">
-                <option value="1">
-                <option value="2">
-                <option value="3">
-                <option value="4">
-                <option value="5">
-                <option value="6">
-                <option value="7">
-                <option value="8">
-                <option value="9">
-                <option value="10">
-            </datalist>
-            <label>Storm Region
+                            <!-- There are four options: Non-profit ($100), Bronze ($200), Silver ($400), Gold ($1000)
+                            The different levels have different perks which you can explain on the page in a key.
+                            Things like directory listings, business trainings, social media posts,
+                            luncheon tickets, sponsorships with levels of advertising, etc. -->
+
+
+
+            <label>Membership Level
                 <select name="regions" id="selectregion" onchange="selectResponse()">
                     <option value="" disabled selected>Select Region...</option>
-                    <option value="preston">Preston</option>
-                    <option value="soda-springs">Soda Springs</option>
-                    <option value="fish-haven">Fish Haven</option>
+                    <option value="preston">Non-Profit</option>
+                    <!-- $100 -->
+                    <option value="soda-springs">Bronze</option>
+                    <option value="fish-haven">Silver</option>
+                    <option value="gold">Gold</option>
                 </select>
             </label>
 
-            <div id="danger">User in danger?
-                <label><input type=radio name="danger" value="yes"> Yes</label>
-                <label><input type=radio name="danger" value="maybe"> Maybe</label>
-                <label><input type=radio name="danger" value="no"> No</label>
-            </div>
-            <label>Comments
-                <input type="text">
-            </label>
         </fieldset>
 
-        <input type="submit" value="Create My Storm Sighting" class="sbutton">
+        <input type="submit" value="Join" class="sbutton">
     </form>
 </div>
 
