@@ -73,11 +73,19 @@ font-weight: bold;
     margin-left: 1rem;
   }
 
+  .popup .closebtn {
+    position: absolute;
+  }
+  
   #scoot {
     transition: margin-left .5s;
     padding: 1rem;
     text-align: center;
     color: #22223B;
+  }
+
+  .popup {
+    display: none;
   }
 
   /* Three day forecast */

@@ -1,6 +1,6 @@
 // Town Information for Preston, Soda Springs, and Fish Haven on Home Page
-const requestURL = 'https://api.openweathermap.org/data/2.5/onecall?lat=49.20205&lon=113.299148&units=imperial&exclude=minutely,hourly,daily&appid=edd40baf43f2b3f80219cb8af5bd05d9';
-// lat=41.04&lon=111.94
+const requestURL = 'https://api.openweathermap.org/data/2.5/onecall?lat=41.0352&lon=-111.9386&units=imperial&exclude=minutely,hourly,daily&appid=edd40baf43f2b3f80219cb8af5bd05d9';
+// lat=41.0352&lon=111.9386
 fetch(requestURL)
   .then(function (response) {
     return response.json();
@@ -24,12 +24,18 @@ fetch(requestURL)
 
 let alerts = jsonObject['alerts'];
 console.log(alerts);
-let fourth = document.createElement('span');
-document.querySelector('span.alert');
+let warning = document.createElement('p');
+if (alerts == undefined) {
+document.querySelector('.popup').style.display ='block';  
+  }
+  else {
+    document.querySelector('.popup').style.display ='none';  
+// document.createElement('span');
+warning.textContent = 'Weather alert today: ' + alerts[0].event + '!';
+  }
 
+function closeAlert() {
+  document.getElementById("alert").style.width = "0";
 
-  // if (alerts != undefined) {
-    // warning == 
-  // }
-
+}
   });
