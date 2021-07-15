@@ -9,6 +9,7 @@ fetch(requestURL)
   .then(function (jsonObject) {
 
   let conditions = jsonObject['current'];
+  let alert = jsonObject['alerts'];
 
   let first = document.createElement('p');
     //first.setAttribute('class', 'item');
@@ -22,17 +23,22 @@ fetch(requestURL)
   document.querySelector('p.towndata').appendChild(third);
 
 
-let alerts = jsonObject['alerts'];
-console.log(alerts);
-let warning = "There are no alerts in your area";
+// let alerts = jsonObject['alerts'];
+// console.log(alerts);
+//let warning = "There are no alerts in your area";
+//document.querySelector('#warning') = warning;
+// if (alerts == undefined) {
+//   document.querySelector('#warning') = warning;
+// }
+// else {
+//   document.querySelector('#warning') = 'Weather alert today: ' + alerts[0].event + '!';
+//   //warning.textContent = 'Weather alert today: ' + alerts[0].event + '!';
+// }
 
-if (alerts == undefined) {
-  document.querySelector('#warning') = warning;
-}
-else {
-  document.querySelector('#warning') = 'Weather alert today: ' + alerts[0].event + '!';
-  //warning.textContent = 'Weather alert today: ' + alerts[0].event + '!';
-}
+
+// let warning = document.createElement('li');
+// warning.textContent = alerts[0].event;
+// document.querySelector('span.#warning').appendChild(warning);
 
 var closebtns = document.getElementsByClassName("close");
 var i;

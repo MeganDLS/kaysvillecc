@@ -26,31 +26,29 @@ ul {
 }
 
 ul li {
-  border: 1px solid #ddd;
-  margin-top: -1px; /* Prevent double borders */
-  background-color: #f6f6f6;
-  padding: 12px;
+  border: 1px solid #22223B;
+  margin-top: -1px;
+  background-color: #C9ADA7;
+  padding: .8rem;
   text-decoration: none;
-  font-size: 18px;
-  color: black;
+  font-size: 1.3rem;
+  color: #22223B;
   display: block;
   position: relative;
 }
 
-ul li:hover {
-  background-color: #eee;
-}
+ul li:hover {background-color: #9A8C98;}
 
 .close {
   cursor: pointer;
   position: absolute;
   top: 50%;
   right: 0%;
-  padding: 12px 16px;
+  padding: .8rem 1rem;
   transform: translate(0%, -50%);
 }
 
-.close:hover {background: #bbb;}
+.close:hover {background: #F2E9E4;}
 
 
 /* Navigation */
@@ -128,7 +126,6 @@ footer {
   width: 100%;
 }
 
-/** Pages **/
 /* Three day forecast */
 .daily {
   text-align: right;
@@ -143,6 +140,56 @@ footer {
 .gallerychild {
   filter: grayscale(70%);
 }
+
+/** Pages **/
+/* City */
+body, html {
+  height: 80%;
+}
+.parallax {
+
+  background-image: url("../images/teens700w.jpg");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cityinfo {
+  height:1000px;background-color:#9A8C98;font-size:36px;
+}
+
+/* Collapsible information */
+
+.collapsible {
+  background-color: #C9ADA7;
+  color: #22223B;
+  cursor: pointer;
+  padding: 1.5rem;
+  width: 100%;
+  text-align: left;
+  font-size: 2rem;
+}
+
+.active,
+.collapsible:hover {
+  background-color: #9A8C98;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 1.5rem;
+  display: none;
+  overflow: hidden;
+  background-color: #F2E9E4;
+  color: #4A4E69;
+}
+
 
 /* Directory */
 #directory {

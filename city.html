@@ -8,20 +8,16 @@
   <meta name="author" content="Megan De León">
   <meta name="description" content="Web Development for BYU Idaho, WDD230-01">
   <title>Kaysville Chamber of Commerce</title>
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&family=Raleway:wght@100;400;900&display=swap"
     rel="stylesheet">
-
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="icon" type="image/png" href="favicon.ico">
   <link href="css/large.css" rel="stylesheet" />
   <link href="css/medium.css" rel="stylesheet" />
   <link href="css/small.css" rel="stylesheet" />
-
 </head>
 
 <body>
@@ -59,18 +55,100 @@
     <span id="opennav" onclick="openNav()">&#9776; Menu</span>
 <p></p>
 
-<div>
+<div class="parallax"></div>
+
+<button type="button" class="collapsible">
+  Kaysville City History
+</button>
+<div class="content">
+  <p>
+    <h4>Hector Caleb Haight</h4>
+    Hector Caleb Haight is unique in that he is claimed
+     by two towns, Farmington and Kaysville, as their
+      first settler. Shortly after the pioneers entered the
+       Salt Lake Valley on July 24, 1847, Hector Haight was sent
+        north to find grazing for the stock. On a beautiful stream in
+         the Kaysville/Farmington area, Haight soon built a log cabin and brought his family to live there.
+    
+    <h4>Settlers</h4>
+    Many more families must have arrived during the summer because, according to
+     the 1850 census, there were over three hundred settlers in this part of the
+      valley and it was time for the organization of a ward. On January 27, 1851
+       Brigham Young and Heber C. Kimball came to the Phillips home for that purpose.
+        Edward Phillips was asked to be Bishop, but feeling unworthy he suggested William Kay,
+         who was appointed. It was not until September of 1852 that the ward formally began
+          to function with William Kay as Bishop, Edward Phillips as first counselor,
+           and John H. Green as second counselor. This little settlement became known
+            as Kay's Ward. "Little" really isn't the word to use because the settlement
+             covered a great deal of territory - from Haight's Creek on the south to the
+              Weber River on the north, and from the mountains on the east to the lake on
+               the west. In 1856 William Kay was called on a mission to Carson Valley in
+                what is now Nevada. After Bishop Kay left there was a desire on the part of
+                 some of the people to have the name of the settlement changed from Kay's Ward
+                  to Freedom. The request was presented to President Brigham Young and when he
+                   bluntly asked, "When did Kay's Ward get its Freedom" his reply was taken as
+                    disapproval and the matter was dropped.
+    </p>
+</div>
+
+<button type="button" class="collapsible">
+ Demographic Information
+</button>
+<div class="content">
+  <p>
+    <h4>Demographics</h4>
+    
+    The majority of people coming to Kaysville up to 1852 were English.
+     Of the 29 families who arrived before this date, 19 families came from England,
+      three from New York, two from Vermont and one from Kentucky. No record can be found
+       of the other four families. Later immigration to Kaysville seems to be in practically
+        the same proportions. The majority of the people came from England or were of English descent.
+         Most people lived on their farms with very few homes in the central part, which has since
+          become the city of Kaysville. The first people to arrive settled on the streams or near the lake shore.
+           There was no division of lands. A settler came in, saw a tract of land that suited him, and if not
+            already occupied, took it up by fencing it and living on it.
+     Several families came together and usually settled in the same neighborhood.  
+  </p>
+    </div>
+    <button type="button" class="collapsible">
+      Things To Do
+     </button>
+     <div class="content">
+       <p>
+         
+         <h4>Adult Sports</h4>
+         Find information regarding adult sports leagues.
+
+         <h4>Community Events</h4>
+         Access calendars to view upcoming events.
+         
+         <h4>Parks & Trails</h4>
+         Check out area parks, facilities, and a list of their amenities.
+         
+         <h4>Volunteer</h4>
+         If you are interested in volunteering for a sport or chaperoning a program you are required to fill out a background check.
+         
+         <h4>Youth Sports</h4>
+         Sign up for youth sports in Kaysville City.
+         <a href="https://www.kaysvillecity.com/412/Things-to-Do">More information here.</a>
+       </p>
+         </div>
+
+
+
+<div class="cityinfo">
     <h2>In Our City</h2>
-    <img src="images/teens700w.jpg" alt="open sign">
+    <!-- <img src="images/teens700w.jpg" alt="open sign"> -->
     <h3>Bulletin</h3>
     <p> All the stuff to do this month</p>
 </div>
 
+<div class="parallax"></div>
 
 
 
   <script src="js/navigation.js"></script>
-
+  <script src="js/city.js"></script>
 </body>
 <footer>
 
@@ -82,14 +160,6 @@
   </p>
 </footer>
 
-<!-- <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-<script>
-WebFont.load({
-    google: {
-        families: ["Montserrat", "Raleway"]
-    }
-});
-</script> -->
 <script src="js/getdate.js"></script>
 
 </html>
