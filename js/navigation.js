@@ -9,6 +9,11 @@ function closeNav() {
   document.getElementById("scoot").style.marginLeft= "0";
 }
 
+
+//popup alerts in index.html
+function closeAlert() {
+  document.getElementById("alert").style.width = "0";
+
 // document.getElementById("myBtn").addEventListener("click", open_close);
 
 // var menuState = 0 // close

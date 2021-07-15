@@ -24,18 +24,21 @@ fetch(requestURL)
 
 let alerts = jsonObject['alerts'];
 console.log(alerts);
-let warning = document.createElement('p');
+let warning = "There are no alerts in your area";
+
 if (alerts == undefined) {
-document.querySelector('.popup').style.display ='block';  
-  }
-  else {
-    document.querySelector('.popup').style.display ='none';  
-// document.createElement('span');
-warning.textContent = 'Weather alert today: ' + alerts[0].event + '!';
-  }
-
-function closeAlert() {
-  document.getElementById("alert").style.width = "0";
-
+  document.querySelector('#warning') = warning;
 }
+else {
+  document.querySelector('#warning') = 'Weather alert today: ' + alerts[0].event + '!';
+  //warning.textContent = 'Weather alert today: ' + alerts[0].event + '!';
+}
+
+var closebtns = document.getElementsByClassName("close");
+var i;
+
+for (i = 0; i < closebtns.length; i++) {
+  closebtns[i].addEventListener("click", function() {
+    this.parentElement.style.display = 'none';
   });
+}});

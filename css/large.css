@@ -1,102 +1,144 @@
- /* soft purple #9A8C98 */
-/* dark purple #4A4E69 */
-/* soft pink #C9ADA7 */
-/* Dark blue #22223B*/
-/* cream #F2E9E4 */
-
+/* Soft purple #9A8C98 */
+/* Dark purple #4A4E69 */
+/* Soft pink #C9ADA7 */
+/* Dark blue #22223B */
+/* Cream #F2E9E4 */
 
 * {
   box-sizing: border-box;
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
-    background-color: #F2E9E4;
-    max-width: 85%;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #F2E9E4;
+  max-width: 85%;
   margin: 0 auto;
 }
 
 h1 {
-    font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway', sans-serif;
+}
+/* Alert pop up */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
-/* Navigation */
+ul li {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block;
+  position: relative;
+}
 
+ul li:hover {
+  background-color: #eee;
+}
+
+.close {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  padding: 12px 16px;
+  transform: translate(0%, -50%);
+}
+
+.close:hover {background: #bbb;}
+
+
+/* Navigation */
 #opennav {
-  color:#4A4E69;
+  color: #4A4E69;
   font-size: 1.8rem;
   margin-bottom: 2rem;
-font-weight: bold;
-
+  font-weight: bold;
 }
 
 #opennav:hover {
   background-color: #22223B;
-  color:#C9ADA7;
+  color: #C9ADA7;
   padding: .2rem;
   border-radius: .3rem;
   border-bottom: 1px solid #4A4E69;
-
 }
 
 .sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #22223B;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 4rem;
-  }
-  
-  .sidenav a {
-    padding: .5rem .5rem .5rem 1rem;
-    text-decoration: none;
-    font-size: 1.5rem;
-    color: #F2E9E4;
-    display: block;
-    transition: 0.3s;
-  }
-  
-  .sidenav a:hover {
-    color: #C9ADA7;
-  }
-  
-  .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 1.5rem;
-    font-size: 2rem;
-    margin-left: 1rem;
-  }
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #22223B;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 4rem;
+}
 
-  .popup .closebtn {
-    position: absolute;
-  }
-  
-  #scoot {
-    transition: margin-left .5s;
-    padding: 1rem;
-    text-align: center;
-    color: #22223B;
-  }
+.sidenav a {
+  padding: .5rem .5rem .5rem 1rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #F2E9E4;
+  display: block;
+  transition: 0.3s;
+}
 
-  .popup {
-    display: none;
-  }
+.sidenav a:hover {
+  color: #9A8C98;
+}
 
-  /* Three day forecast */
-  .daily {
-    text-align: right;
-    margin-bottom: -8.7rem;
-    color: white;
-  }
-  .blossom {
-    opacity: 50%;
-  }
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 1.5rem;
+  font-size: 2rem;
+  margin-left: 1rem;
+}
+
+#scoot {
+  transition: margin-left .5s;
+  padding: 1rem;
+  text-align: center;
+  color: #2b2b49;
+}
+
+/* Footer  */
+footer {
+  transition: margin-left .5s;
+  text-align: center;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  background-color: #4A4E69;
+  padding: .2rem;
+  color: #F2E9E4;
+}
+
+.column img {
+  width: 100%;
+}
+
+/** Pages **/
+/* Three day forecast */
+.daily {
+  text-align: right;
+  margin-bottom: -8.7rem;
+  color: white;
+}
+
+.blossom {
+  opacity: 50%;
+}
 
 .gallerychild {
   filter: grayscale(70%);
@@ -109,41 +151,18 @@ font-weight: bold;
 }
 
 #column1 {
-width: 25%;
+  width: 25%;
 }
 
 #directory img {
   width: 100%;
 }
 
-
-
-
-
-
- /* Footer  */
- footer{
-    transition: margin-left .5s;
-    text-align: center;
-  }
-
-  .column {
-    float: left;
-    width: 25%;
-    background-color: #4A4E69;
-    padding: .2rem;
-    color: #F2E9E4;
-  }
-  .column img {
-    width: 100%;
-  }
-
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 #contactinfo {
   color: #C9ADA7;
@@ -155,8 +174,8 @@ width: 25%;
   border: 5px dotted #22223B;
   padding: .3rem;
 }
-  /* Join us */
 
+/* Join us */
 ul {
   list-style: none;
 }
