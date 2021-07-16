@@ -6,23 +6,23 @@
     "number": "801-628-4795",
     "address": "297 North 750 East",
     "logo": "plumbing.png",
-    "website": "pipedreamsut.com"
+    "website": "https://pipedreamsut.com"
    },
    {
     "name": "Clytie Adams Ballet",
     "field": "Dancers",
     "number": "801-628-4795",
     "address": "297 North 750 East",
-    "logo": "plumbing.png",
-    "website": "pipedreamsut.com"
+    "logo": "adams.png",
+    "website": "https://clytieadams.com/"
    },
    {
     "name": "Sweet Cakes",
     "field": "Bakery",
     "number": "801-628-4795",
     "address": "297 North 750 East",
-    "logo": "plumbing.png",
-    "website": "pipedreamsut.com"
+    "logo": "sweetcake.png",
+    "website": "https://www.sweetcakebakeshop.com/"
    },
    {
     "name": "Orlando's",
@@ -30,7 +30,7 @@
     "number": "385-209-2284",
     "address": "141 North Main Street",
     "logo": "orlandos.png",
-    "website": "orlandosonmain.com"
+    "website": "https://orlandosonmain.com"
    },
    {
     "name": "Kaysville Veterinary Hospital",
@@ -41,36 +41,36 @@
     "website": "https://www.kaysvilleveterinaryhospital.com/"
    },
    {
-    "name": "Pipe Dreams Plumbing",
-    "field": "Plumbers",
-    "number": "801-628-4795",
-    "address": "297 North 750 East",
-    "logo": "plumbing.png",
-    "website": "pipedreamsut.com"
+    "name": "Annarewick",
+    "field": "Clothing",
+    "number": "801-991-0424",
+    "address": "1571 Leola St.",
+    "logo": "anan.png",
+    "website": "https://annarewick.com/"
    },
    {
-    "name": "Pipe Dreams Plumbing",
-    "field": "Plumbers",
-    "number": "801-628-4795",
-    "address": "297 North 750 East",
-    "logo": "plumbing.png",
-    "website": "pipedreamsut.com"
+    "name": "BC Chicken",
+    "field": "Restaurant",
+    "number": "801-498-7575",
+    "address": "20 South Main Street",
+    "logo": "bc.png",
+    "website": "https://bcchickenkaysville.com"
    },
    {
-    "name": "Pipe Dreams Plumbing",
-    "field": "Plumbers",
-    "number": "801-628-4795",
-    "address": "297 North 750 East",
-    "logo": "plumbing.png",
-    "website": "pipedreamsut.com"
+    "name": "Develop Bright",
+    "field": "Consultants",
+    "number": "801-820-4091",
+    "address": "11 Main Street",
+    "logo": "db.png",
+    "website": "https://developbright.com/"
    },
    {
-    "name": "Pipe Dreams Plumbing",
-    "field": "Plumbers",
-    "number": "801-628-4795",
-    "address": "297 North 750 East",
-    "logo": "plumbing.png",
-    "website": "pipedreamsut.com"
+    "name": "Lisa's Popcorn",
+    "field": "Restaurant",
+    "number": "385-528-0805",
+    "address": "37 North Main Street",
+    "logo": "lisas.png",
+    "website": "https://lisaspopcorn.com/"
    }
 ]
 }

@@ -1,8 +1,8 @@
 // Kaysville: 41.0672,-111.9398
 
-const requestURL = 'https://api.weather.gov/alerts/active?point=31.0753%2C-85.8757';
+const requestURL1 = 'https://api.weather.gov/alerts/active?point=31.0753%2C-85.8757';
 // lat=41.0352&lon=111.9386
-fetch(requestURL)
+fetch(requestURL1)
   .then(function (response) {
     return response.json();
   })
@@ -31,24 +31,30 @@ fetch(requestURL)
     
       document.querySelector('.alerts-list').appendChild(alertElem);
     }
+  });
 
-const requestURL = 'https://api.openweathermap.org/data/2.5/onecall?lat=42.5957&lon=-121.9400&units=imperial&exclude=minutely,hourly,daily&appid=edd40baf43f2b3f80219cb8af5bd05d9'; 
- let conditions = jsonObject['current'];
+const requestURL2 = 'https://api.openweathermap.org/data/2.5/onecall?lat=42.5957&lon=-121.9400&units=imperial&exclude=minutely,hourly,daily&appid=edd40baf43f2b3f80219cb8af5bd05d9'; 
+fetch(requestURL2)
+  .then(function (response2) {
+    return response2.json();
+  })
+
+  .then(function (jsonObject2) { 
+
+let conditions = jsonObject2['current'];
 
  let first = document.createElement('p');
-  //first.setAttribute('class', 'item');
  let second = document.createElement('p');
  let third = document.createElement('p');
+
  first.textContent = conditions.temp + ' °F';
  second.textContent = 'Humidity: ' + conditions.humidity + '%';
  third.textContent = conditions.weather[0].description.charAt(0).toUpperCase() + conditions.weather[0].description.slice(1);  
- document.querySelector('p.towndata').appendChild(first);
- document.querySelector('p.towndata').appendChild(second);
- document.querySelector('p.towndata').appendChild(third);
+
+ document.querySelector('p.currents').appendChild(first);
+ document.querySelector('p.currents').appendChild(second);
+ document.querySelector('p.currents').appendChild(third);
   
-
-
-
   // let alerts = jsonObject['alerts'];
   // console.log(alerts);
   //let warning = "There are no alerts in your area";
@@ -66,6 +72,7 @@ const requestURL = 'https://api.openweathermap.org/data/2.5/onecall?lat=42.5957&
   // warning.textContent = alerts[0].event;
   // document.querySelector('span.#warning').appendChild(warning);
 
+
   var closebtn = document.getElementsByClassName("close");
   var i;
 
@@ -75,9 +82,3 @@ const requestURL = 'https://api.openweathermap.org/data/2.5/onecall?lat=42.5957&
     });
   }
 });
-
-
-
-// fetch(...).then(...);
-
-// fetch(...).then(...);

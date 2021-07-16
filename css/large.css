@@ -345,3 +345,13 @@ tr:nth-child(odd) {
 ul {
   list-style: none;
 }
+/* Contact */
+.board {
+  width: 50%;
+  margin: auto auto;
+}
+
+/* Attributions */
+.attlists {
+display: flex;
+}

@@ -4,7 +4,6 @@ fetch(local)
     return response.json();
   })
   .then(function (jsonObject) {
-
     const busi = jsonObject['business'];
     for (let i = 0; i < busi.length; i++)
   {
