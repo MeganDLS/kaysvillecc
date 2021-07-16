@@ -29,7 +29,7 @@ h2 {
 h3 {
   text-align: center;
 }
-/* Alert pop up */
+
 ul {
   list-style-type: none;
   padding: 0;
@@ -50,30 +50,36 @@ ul li {
 
 ul li:hover {background-color: #9A8C98;}
 
+/* Alert pop up */
 .alerts-banner {
   display: flex;
-  background-color: rgba(220, 20, 60, 0.178);
+/* background-color: rgba(220, 20, 60, 0.178); */
   padding: 0.5rem 1rem;
+  color:#22223B;
 }
+
 .alerts-heading {
   margin: 0;
   text-align: left;
   font-size: 1rem;
 }
+
 .alerts-banner button {
   margin-left: auto;
 }
 
 .close {
   cursor: pointer;
-  position: absolute;
-  top: 50%;
-  right: 0%;
+  position: relative;
   padding: .8rem 1rem;
-  transform: translate(0%, -50%);
+  /* position: absolute;
+  top: 22.5%;
+  right: 8.7%; */
+  /* padding: .8rem 1rem;
+  transform: translate(0%, -50%); */
 }
 
-.close:hover {background: #F2E9E4;}
+.close:hover {background: #9A8C98;}
 
 
 /* Navigation */
@@ -172,7 +178,6 @@ body, html {
   height: 80%;
 }
 .parallax {
-
   background-image: url("../images/teens700w.jpg");
 
   /* Full height */
@@ -186,11 +191,12 @@ body, html {
 }
 
 .cityinfo {
-  height:1000px;background-color:#9A8C98;font-size:36px;
+  height:1000px;
+  background-color:#9A8C98;
+  font-size:36px;
 }
 
 /* Collapsible information */
-
 .collapsible {
   background-color: #C9ADA7;
   color: #22223B;
