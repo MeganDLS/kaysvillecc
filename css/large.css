@@ -50,6 +50,20 @@ ul li {
 
 ul li:hover {background-color: #9A8C98;}
 
+.alerts-banner {
+  display: flex;
+  background-color: rgba(220, 20, 60, 0.178);
+  padding: 0.5rem 1rem;
+}
+.alerts-heading {
+  margin: 0;
+  text-align: left;
+  font-size: 1rem;
+}
+.alerts-banner button {
+  margin-left: auto;
+}
+
 .close {
   cursor: pointer;
   position: absolute;

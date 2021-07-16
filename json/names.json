@@ -18,27 +18,27 @@
    },
    {
     "name": "Sweet Cakes",
-    "field": "Plumbers",
+    "field": "Bakery",
     "number": "801-628-4795",
     "address": "297 North 750 East",
     "logo": "plumbing.png",
     "website": "pipedreamsut.com"
    },
    {
-    "name": "Pipe Dreams Plumbing",
-    "field": "Plumbers",
-    "number": "801-628-4795",
-    "address": "297 North 750 East",
-    "logo": "plumbing.png",
-    "website": "pipedreamsut.com"
+    "name": "Orlando's",
+    "field": "Restaurant",
+    "number": "385-209-2284",
+    "address": "141 North Main Street",
+    "logo": "orlandos.png",
+    "website": "orlandosonmain.com"
    },
    {
-    "name": "Pipe Dreams Plumbing",
-    "field": "Plumbers",
-    "number": "801-628-4795",
-    "address": "297 North 750 East",
-    "logo": "plumbing.png",
-    "website": "pipedreamsut.com"
+    "name": "Kaysville Veterinary Hospital",
+    "field": "Vetrinarian",
+    "number": "801-444-3770",
+    "address": "166 South Main Street",
+    "logo": "hospital.png",
+    "website": "https://www.kaysvilleveterinaryhospital.com/"
    },
    {
     "name": "Pipe Dreams Plumbing",
