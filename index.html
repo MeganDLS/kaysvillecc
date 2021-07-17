@@ -10,28 +10,20 @@
   <title>Kaysville Chamber of Commerce</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&family=Raleway:wght@100;400;900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Delius+Unicase:wght@700&family=Didact+Gothic&display=swap"
+    rel="stylesheet">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="icon" type="image/png" href="favicon.ico">
+
   <link href="css/large.css" rel="stylesheet" />
   <link href="css/medium.css" rel="stylesheet" />
   <link href="css/small.css" rel="stylesheet" />
-
 </head>
 
 <body>
-
-  <!-- Alert -->
- 
-  <aside class="alerts-banner">
-    <h2 class="alerts-heading"></h2>
-    <ul class="alerts-list">
-    </ul>
-    <button class="close" id="close">x</button>
-  </aside>
-
-
-  <!-- Navigation -->
+  <!-- Navigation using navigation.js -->
   <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a href="index.html" class="active">Home</a>
@@ -48,23 +40,33 @@
     </p>
 
     <a href="https://www.instagram.com/">
-      <img src="images/instagram.svg" alt="Instagram camera Icon" width="64" height="64"/>
+      <img src="images/instagram.svg" alt="Instagram camera Icon" width="64" height="64" />
     </a>
     <a href="https://www.facebook.com">
-      <img src="images/facebook.svg" alt="Facebook letter F Icon" width="64" height="64"/>
+      <img src="images/facebook.svg" alt="Facebook letter F Icon" width="64" height="64" />
     </a>
   </div>
 
   <div id="scoot">
-    <h1>Kaysville.co</h1>
-    <h4>Bringing our community closer</h4>
+    <!-- Alert -->
+    <aside class="alerts-banner">
+      <h2 class="alerts-heading"></h2>
+      <ul class="alerts-list">
+      </ul>
+      <button class="close" id="close">x</button>
+    </aside>
+
+    <div class="title">
+      <img src="images/kaysville.svg" alt="Purple mountain logo" width="80px" height="80px">
+      <h1 class="kaysville">Kaysville.co</h1>
+      <h2 class="subheading">Bringing our community closer</h2>
+    </div>
+
     <span id="opennav" onclick="openNav()">&#9776; Menu</span>
     <p></p>
-
     <div class="row">
       <div class="column block">
         <h2>What's the weather?</h2>
-
         <!-- currentconditions.js -->
         <p class="currents"></p>
       </div>
@@ -86,38 +88,41 @@
         <p> Tradition of ballet excellence.</p>
       </div>
     </div>
-<div></div>
+    <div></div>
     <div class="row">
       <div class="column">
-        <img class="gallerychild" src="images/kiki.jpg" alt="Sign of mini signs">
+        <img class="gallerychild" src="images/kiki.jpg" alt="A picture of a family">
       </div>
       <div class="column">
-
         <p class="block">
           <h2>This week in Kaysville!</h2><br><br>
-          Thursday, July 15, 2021: The thing with the thing, at the place near you. <br>
-          Saturday July 31, 2021: Last Cinderall community play at 7:00 PM.
+          Thursday, July 15, 2021: The thing, with the thing, at the place near you. <br>
+          Saturday, July 17, 2021: Q&A with City Council. <br>
+          Wednesday, July 21, 2021: Meet the 2021 Candidates. <br>
+          Friday, July 23, 2021: Pioneer Day Breakfast at Bowmans. <br>
+          Saturday, July 31, 2021: Last Cinderall community play at 7:00 PM.<br>
+          Tuesday, August 3, 2021: Power Commission Meeting.
         </p>
-        <!-- <img class="gallerychild" src="images/street2.jpg" alt="main street with trees and signs"> -->
       </div>
       <div class="column">
         <h2>Sweet Cakes</h2>
         <p>To satisfy, even a gluten free, sweet tooth.</p>
         <a href="https://www.sweetcakebakeshop.com/"><img class="gallerychild" src="images/cake.png"
-            alt="Ballerina holding a pose"></a>
+            alt="A fondant harry potter cake"></a>
       </div>
       <div class="column">
-        <!-- Three Day Forecast -->
+        <!-- Three Day Forecast using threeday.js -->
         <h2>Looking ahead...</h2>
         <div class="daily block"></div>
-        <img class="gallerychild blossom" src="images/blossom.jpg" alt="Sign of mini signs">
-        <!-- <img class="gallerychild" src="images/sign500w.jpg" alt="Sign of mini signs"> -->
+        <img class="gallerychild blossom" src="images/blossom.jpg" alt="Pink blossoms against a light blue sky">
       </div>
     </div>
   </div>
+
   <script src="js/navigation.js"></script>
   <script src="js/currentconditions.js"></script>
   <script src="js/threeday.js"></script>
+
 </body>
 <footer>
 
