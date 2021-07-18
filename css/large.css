@@ -157,10 +157,21 @@ ul li:hover,
   color: #2b2b49;
 }
 
+.block {
+  border: 5px dotted #22223B;
+  padding: .3rem;
+}
+
 /* Footer  */
 footer {
   transition: margin-left .5s;
   text-align: center;
+}
+
+#contactinfo {
+  color: #C9ADA7;
+  padding: .4rem;
+  margin: 1rem;
 }
 /* HOME Image grid */
 .column {
@@ -185,6 +196,13 @@ footer {
 .row p {
   padding-left: .5rem;
 }
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+} 
 
 /*HOME bottom right, Three day forecast */
 .daily {
@@ -245,7 +263,7 @@ flex-wrap: wrap;
 }
 
 .data:nth-child(2) {
-  
+
 }
 
 /* #directory {
@@ -259,25 +277,9 @@ flex-wrap: wrap;
 
 #directory img {
   width: 100%;
-}
+} */
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 
-#contactinfo {
-  color: #C9ADA7;
-  padding: .4rem;
-  margin: 1rem;
-}
-
-.block {
-  border: 5px dotted #22223B;
-  padding: .3rem;
-}
-*/
 
 
 /* Join us */
