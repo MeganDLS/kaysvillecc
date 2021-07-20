@@ -8,8 +8,6 @@
   <meta name="author" content="Megan De León">
   <meta name="description" content="Web Development for BYU Idaho, WDD230-01">
   <title>Kaysville Chamber of Commerce</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Delius+Unicase:wght@700&family=Didact+Gothic&display=swap"
     rel="stylesheet">
@@ -50,14 +48,14 @@
   <div id="scoot">
     <!-- Alert -->
     <aside class="alerts-banner">
-      <h2 class="alerts-heading"></h2>
+      <h2 class="alerts-heading"> </h2>
       <ul class="alerts-list">
       </ul>
       <button class="close" id="close">x</button>
     </aside>
 
     <div class="title">
-      <img src="images/kaysville.svg" alt="Purple mountain logo" width="80px" height="80px">
+      <img src="images/kaysville.svg" alt="Purple mountain logo" width="80" height="80">
       <h1 class="kaysville">Kaysville.co</h1>
       <h2 class="subheading">Bringing our community closer</h2>
     </div>
@@ -67,7 +65,7 @@
     <div class="row">
       <div class="column block">
         <h2>What's the weather?</h2>
-        <img src="images/smlsunny.jpg" alt="sunny day">
+        <img src="images/smlsunny.jpg" alt="sunny day" width="350" height="225"> 
         <!-- currentconditions.js -->
         <p class="currents"></p>
 
@@ -76,15 +74,15 @@
       <div class="column">
         <h2>PD Plumbing</h2>
         <p>The last plumber you'll need to call.</p>
-        <a href="https://www.pipedreamsut.com/"><img class="gallerychild" src="images/plumbing.png"
+        <a href="https://www.pipedreamsut.com/"><img class="gallerychild" src="images/plumbing.png" width="350" height="325"
             alt="Pipe Dreams Plumbing logo"></a>
       </div>
       <div class="column">
 
-        <img class="gallerychild" src="images/couple350w.jpg" alt="Sign of mini signs">
+        <img class="gallerychild" src="images/couple350w.jpg" alt="Sign of mini signs" width="350" height="430">
       </div>
       <div class="column">
-        <a href="https://clytieadams.com/"><img class="gallerychild" src="images/ballet.png"
+        <a href="https://clytieadams.com/"><img class="gallerychild" src="images/ballet.png" width="350" height="325"
             alt="Ballerina holding a pose"></a>
         <h2>Clytie Adams</h2>
         <p> Tradition of ballet excellence.</p>
@@ -93,11 +91,11 @@
     <div></div>
     <div class="row">
       <div class="column">
-        <img class="gallerychild" src="images/kiki.jpg" alt="A picture of a family">
+        <img class="gallerychild" src="images/kiki.jpg" alt="A picture of a family" width="350" height="430">
       </div>
       <div id="thisweek" class="column block">
           <h2>This week in Kaysville!</h2>
-          <p id="events"></p>
+          <p id="events">
           &nbsp;Thursday, July 15, 2021:<br> &emsp;The thing, with the thing, at the place near you. <br><br>
           &nbsp;Saturday, July 17, 2021:<br> &emsp;Q&A with City Council. <br><br>
           &nbsp;Wednesday, July 21, 2021:<br> &emsp;Meet the 2021 Candidates. <br><br>
@@ -109,25 +107,25 @@
       <div class="column">
         <h2>Sweet Cakes</h2>
         <p>To satisfy, even a gluten free, sweet tooth.</p>
-        <a href="https://www.sweetcakebakeshop.com/"><img class="gallerychild" src="images/cake.png"
+        <a href="https://www.sweetcakebakeshop.com/"><img class="gallerychild" src="images/cake.png" width="350" height="325"
             alt="A fondant harry potter cake"></a>
       </div>
       <div class="block column">
         <!-- Three Day Forecast using threeday.js -->
         <h2>Looking ahead...</h2>
         <div class="daily"></div>
-        <img class="gallerychild blossom" src="images/blossom.jpg" alt="Pink blossoms against a light blue sky">
+        <img class="gallerychild blossom" src="images/blossom.jpg" alt="Pink blossoms against a light blue sky" width="350" height="235">
       </div>
     </div>
   </div>
 
+  <script src="js/lazyload.js"></script>
   <script src="js/navigation.js"></script>
   <script src="js/currentconditions.js"></script>
   <script src="js/threeday.js"></script>
 
-</body>
-<footer>
 
+<footer>
   <p>
     &copy; <span id="copyrightyear"></span> | Megan De Le&oacute;n | Utah |
     <a href="https://www.byui.edu/">BYUI Online Learning
@@ -137,5 +135,5 @@
 </footer>
 
 <script src="js/getdate.js"></script>
-
+</body>
 </html>

@@ -76,7 +76,11 @@ ul li:hover,
 
 /* Navigation */
 .active {
-  color: #4A4E69;
+  background-color: #9A8C98;
+}
+
+.active:hover {
+  color: #22223B;
 }
 
 #opennav {
@@ -277,7 +281,6 @@ padding: 1rem;
   width: 100%;
   background-color: #C9ADA7;
   margin: .2rem;
-  align-content: left;
   padding-left: .4rem;
 }
 #directory {
