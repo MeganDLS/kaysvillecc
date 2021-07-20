@@ -10,7 +10,7 @@
 body {
   font-family: 'Didact Gothic', sans-serif;
   background-color: #F2E9E4;
-  max-width: 85%;
+  max-width: 80%;
   margin: 0 auto;
 }
 body,
@@ -30,7 +30,7 @@ h3 {
   text-align: center;
 }
 
-/* HOME Heading */
+/* Heading */
 .title {
   display: grid;
   grid-template-columns: 1fr 10fr;
@@ -72,29 +72,6 @@ ul li {
 ul li:hover,
 .close:hover {
   background-color: #9A8C98;
-}
-
-/* Alert pop up */
-.alerts-banner {
-  display: flex;
-  padding: 0.5rem 1rem;
-  color: #22223B;
-}
-
-.alerts-heading {
-  margin: 0;
-  text-align: left;
-  font-size: 1rem;
-}
-
-.alerts-banner button {
-  margin-left: auto;
-}
-
-.close {
-  cursor: pointer;
-  position: relative;
-  padding: .8rem 1rem;
 }
 
 /* Navigation */
@@ -151,7 +128,6 @@ ul li:hover,
   margin-left: 1rem;
 }
 
-/* Entire Body */
 #scoot {
   transition: margin-left .5s;
   padding: 1rem;
@@ -174,6 +150,30 @@ footer {
   padding: .4rem;
   margin: 1rem;
 }
+
+/* HOME Alert pop up */
+.alerts-banner {
+  display: flex;
+  padding: 0.5rem 1rem;
+  color: #22223B;
+}
+
+.alerts-heading {
+  margin: 0;
+  text-align: left;
+  font-size: 1rem;
+}
+
+.alerts-banner button {
+  margin-left: auto;
+}
+
+.close {
+  cursor: pointer;
+  position: relative;
+  padding: .8rem 1rem;
+}
+
 /* HOME Image grid */
 .column {
   float: left;
@@ -183,6 +183,16 @@ footer {
   color: #F2E9E4;
 }
 
+.column p {
+  text-align: center;
+}
+.currents {
+  margin: 0;
+  padding: 0;
+}
+.currents p {
+  padding: 0;
+}
 .column img {
   width: 100%;
 }
@@ -198,22 +208,21 @@ footer {
   padding-left: .5rem;
 }
 
-
 .row:after {
   content: "";
   display: table;
   clear: both;
 } 
 
+#events {
+  padding-left: .5rem;
+}
+
 /*HOME bottom right, Three day forecast */
 .daily {
   text-align: right;
-  margin-bottom: -8.7rem;
   color: white;
-}
-
-.blossom {
-  opacity: 50%;
+  padding-right: 1rem;
 }
 
 /** PAGES **/
