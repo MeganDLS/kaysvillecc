@@ -297,7 +297,37 @@ section h2 {
   position:inherit;
 }
 /* Contact */
+.board {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
 
+.board p {
+  background-color: #9A8C98;
+  margin: .5rem;
+  padding: .5rem;
+  font-family: 'Didact Gothic', sans-serif;
+  text-align: center;
+}
+
+#board {
+  font-size: 2rem;
+}
+.board img {
+  border-radius: 50%;
+  padding: .5rem;
+  margin: .5rem;
+}
+
+.board {
+  width: 50%;
+  margin: auto auto;
+}
+
+#contactus {
+  text-align: left;
+  font-size: 2rem;
+}
 
 
 /* Join us */
@@ -399,14 +429,6 @@ th {
 
 tr:nth-child(odd) {
   background-color: #9A8C98;
-}
-
-
-
-/* Contact */
-.board {
-  width: 50%;
-  margin: auto auto;
 }
 
 /* Attributions */
