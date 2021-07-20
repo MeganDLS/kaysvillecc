@@ -331,6 +331,11 @@ section h2 {
 
 
 /* Join us */
+
+#joinus {
+  text-align: center;
+  font-size: 2rem;
+}
 table {
   margin: auto auto;
   margin-top: .8rem;
