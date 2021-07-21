@@ -76,7 +76,6 @@ ul li {
 /* Navigation */
 .active {
   background-color: #9A8C98;
-  color: #510020;
 }
 
 #opennav {
@@ -115,11 +114,10 @@ ul li {
   display: block;
   transition: 0.3s;
 }
-.sidenav active {
-  background-color: #9A8C98;
+
+.sidenav .active {
   color: #510020;
 }
-
 a:hover {
   color: #9A8C98;
 }
