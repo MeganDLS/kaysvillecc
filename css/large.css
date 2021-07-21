@@ -116,8 +116,10 @@ ul li {
   transition: 0.3s;
 }
 .sidenav active {
-  
+  background-color: #9A8C98;
+  color: #510020;
 }
+
 a:hover {
   color: #9A8C98;
 }
@@ -140,9 +142,6 @@ a:hover {
   padding: 1rem;
   color: #2b2b49;
 }
-
-
-
 /* Footer  */
 footer {
   transition: margin-left .5s;
@@ -241,11 +240,20 @@ footer {
   padding: 2rem;
   background-color: #C9ADA7;
 }
+.join ul {
+  list-style-type:disc;
+}
+
+.join li {
+  border: none;
+  font-size: 1rem;
+}
 
 .join h2,
 .join a {
   font-size: 1.5rem;
 }
+
 
 /** PAGES **/
 /* City */

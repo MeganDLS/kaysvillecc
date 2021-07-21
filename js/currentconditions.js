@@ -11,7 +11,7 @@ fetch(requestURL)
     let second = document.createElement('p');
     let third = document.createElement('p');
 
-    first.textContent = conditions.temp + ' °F';
+    first.textContent = conditions.temp + '° F';
     second.textContent = 'Humidity: ' + conditions.humidity + '%';
     third.textContent = conditions.weather[0].description.charAt(0).toUpperCase() + conditions.weather[0].description.slice(1);
 

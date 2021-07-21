@@ -70,14 +70,14 @@ fetch(getURL)
 
 
     let e = document.createElement('p');
-    e.textContent = day + ': ' + forecast[0].temp.day + ' °F';
+    e.textContent = day + ': ' + forecast[0].temp.day + '° F';
 
 
     let f = document.createElement('p');
-    f.textContent = day2 + ': ' + forecast[1].temp.day + ' °F';
+    f.textContent = day2 + ': ' + forecast[1].temp.day + '° F';
 
     let g = document.createElement('p');
-    g.textContent = day3 + ': ' + forecast[2].temp.day + ' °F';
+    g.textContent = day3 + ': ' + forecast[2].temp.day + '° F';
 
 
     document.querySelector('div.daily').appendChild(e);
