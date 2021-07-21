@@ -90,7 +90,7 @@ ul li {
   color: #C9ADA7;
   padding: .2rem;
   border-radius: .3rem;
-  border-bottom: 1px solid #4A4E69;
+  border-bottom: 1px solid #22223B;
 }
 
 .sidenav {
@@ -239,19 +239,19 @@ footer {
   background-color: #C9ADA7;
 }
 .join ul {
-  list-style-type:disc;
+  list-style-type: square;
 }
 
 .join li {
   border: none;
   font-size: 1rem;
+  list-style-type: square;
 }
 
 .join h2,
 .join a {
   font-size: 1.5rem;
 }
-
 
 /** PAGES **/
 /* City */
