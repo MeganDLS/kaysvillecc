@@ -5,4 +5,9 @@
     .column  {
       width: 100%;
     }
+/* CONTACT PAGE*/
+.board {
+  grid-template-columns: 1fr;
+}
+
   }

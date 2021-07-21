@@ -29,6 +29,7 @@ h3 {
   border: 5px dotted #22223B;
   padding: .3rem;
 }
+
 /* Heading */
 .title {
   display: grid;
@@ -101,7 +102,7 @@ ul li {
   top: 0;
   left: 0;
   background-color: #22223B;
-  overflow-x: hidden; 
+  overflow-x: hidden;
   transition: 0.5s;
   padding-top: 4rem;
 }
@@ -118,6 +119,7 @@ ul li {
 .sidenav .active {
   color: #510020;
 }
+
 a:hover {
   color: #9A8C98;
 }
@@ -140,6 +142,7 @@ a:hover {
   padding: 1rem;
   color: #22223B;
 }
+
 /* Footer  */
 footer {
   transition: margin-left .5s;
@@ -228,7 +231,7 @@ footer {
 /*HOME bottom right, Three day forecast */
 .daily {
   text-align: right;
-  color: white;
+  color: #F2E9E4;
   padding-right: 1rem;
 }
 
@@ -238,6 +241,7 @@ footer {
   padding: 2rem;
   background-color: #C9ADA7;
 }
+
 .join ul {
   list-style-type: square;
 }
@@ -248,9 +252,13 @@ footer {
   list-style-type: square;
 }
 
-.join h2,
-.join a {
+.join h2 {
   font-size: 1.5rem;
+}
+
+#joinus {
+  color: #22223B;
+  font-size: .7rem;
 }
 
 /** PAGES **/
@@ -325,7 +333,6 @@ section h2 {
   padding: .5rem;
   width: 12rem;
   height: 8rem;
-  position: inherit;
 }
 
 /* Contact */
@@ -423,14 +430,6 @@ form label input:required:valid {
   border-left: green solid 4px;
 }
 
-#gracias {
-  padding: 2rem;
-  background-color: #9A8C98;
-  color: #22223B;
-  font-size: 2rem;
-  margin: 4rem;
-}
-
 #grid {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -473,6 +472,15 @@ th {
 
 tr:nth-child(odd) {
   background-color: #9A8C98;
+}
+
+/* Thank you */
+#gracias {
+  padding: 2rem;
+  background-color: #9A8C98;
+  color: #22223B;
+  font-size: 2rem;
+  margin: 4rem;
 }
 
 /* Attributions */
