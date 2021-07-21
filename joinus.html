@@ -46,7 +46,7 @@
     </div>
     <div id="scoot">
         <div class="title">
-            <img src="images/kaysville.svg" alt="Purple mountain logo" width="80px" height="80px">
+            <img src="images/kaysville.svg" alt="Purple mountain logo" width="80" height="80">
             <h1 class="kaysville">Kaysville.co</h1>
             <h2 class="subheading">Bringing our community closer</h2>
         </div>
@@ -83,10 +83,10 @@
                                 <input pattern="[A-Za-z] {.2}" class="required" type="text" name="fname"
                                     placeholder="Maria" required></label>
                             <label>Last Name
-                                <input pattern="[A-Za-z ]{.2}" class="required" type="text" name="lname"
+                                <input pattern="[A-Za-z]{.2}" class="required" type="text" name="lname"
                                     placeholder="Lopez" required></label>
                             <label>Title
-                                <input pattern="[A-Za-z ]{4}" type="text" name="title" placeholder="Engineer"></label>
+                                <input pattern="[A-Za-z]" type="text" name="title" placeholder="Engineer"></label>
                             <label>Email
                                 <input type="email" class="required" name="email" placeholder="user@email.com"
                                     required></label>
@@ -168,21 +168,17 @@
                 </div>
             </div>
     </div>
-    </div>
     </main>
-
     <script src="js/navigation.js"></script>
+    <footer>
+        <p>
+            &copy; <span id="copyrightyear"></span> | Megan De Le&oacute;n | Utah |
+            <a href="https://www.byui.edu/">BYUI Online Learning
+            </a> | <a href="attributions.html">Attributions</a> |
+            <span id="updated"></span>
+        </p>
+    </footer>
+    <script src="js/getdate.js"></script>
 </body>
-<footer>
-
-    <p>
-        &copy; <span id="copyrightyear"></span> | Megan De Le&oacute;n | Utah |
-        <a href="https://www.byui.edu/">BYUI Online Learning
-        </a> | <a href="attributions.html">Attributions</a> |
-        <span id="updated"></span>
-    </p>
-</footer>
-
-<script src="js/getdate.js"></script>
 
 </html>

@@ -113,6 +113,7 @@ ul li {
 
 .active {
   background-color: #9A8C98;
+  color: #510020;
 }
 
 a:hover {
@@ -327,6 +328,7 @@ section h2 {
 
 .board p {
   background-color: #9A8C98;
+  color: #22223B;
   margin: .5rem;
   padding: .5rem;
   font-family: 'Didact Gothic', sans-serif;
@@ -372,7 +374,7 @@ table {
 
 form fieldset {
   margin: 2rem;
-  border: 4px solid #4A4E69;
+  border: 4px solid #22223B;
   padding: 1.5rem 2%;
 }
 
@@ -429,7 +431,7 @@ form label input:required:valid {
 
 .goals {
   margin-top: 3rem;
-  border: 4px solid #4A4E69;
+  border: 4px solid #22223B;
 }
 
 .goals li {
