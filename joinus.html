@@ -52,7 +52,7 @@
         </div>
 
         <span id="opennav" onclick="openNav()">&#9776; Menu</span>
-        <p></p>
+
         <main>
             <div class="block">
                 <h2 id="joinus">Join the Kaysville City Chamber of Commerce</h2>
@@ -62,37 +62,34 @@
             <div id="grid">
                 <div class="goals">
                     <ul>
-                        <li>Our Goals</li>
-                        <li>Connect and empathize with our neighbors.</li>
-                        <li>Providing resources to those in need.</li>
-                        <li>Creating safe environments for our children. </li>
-                        <li> To learn and grow.</li>
-                        <li>Keepind a clean environment.</li>
-                        <li>Ensuring every member of our community feels welcome.</li>
-                        <li>Learning to grow in love and understanding.</li>
+                        <li>Our Goals:</li>
+                        <li>Connect with those around us</li>
+                        <li>Provide resources to those in need</li>
+                        <li>Create safe environments for our children</li>
+                        <li>Learn and grow</li>
+                        <li>Keep a clean environment</li>
+                        <li>Ensure every member feels welcome</li>
+                        <li>Empathize with our elderly neighbors</li>
                     </ul>
                 </div>
 
                 <div class="formsection">
-
                     <form method="get" action="thanks.html">
-
                         <fieldset>
                             <legend>Contact Information</legend>
                             <label>First Name
-                                <input pattern="[A-Za-z] {.2}" class="required" type="text" name="fname"
+                                <input pattern="[A-Za-z]{.2}" class="required" type="text" name="fname"
                                     placeholder="Maria" required></label>
                             <label>Last Name
                                 <input pattern="[A-Za-z]{.2}" class="required" type="text" name="lname"
                                     placeholder="Lopez" required></label>
                             <label>Title
-                                <input pattern="[A-Za-z]" type="text" name="title" placeholder="Engineer"></label>
+                                <input pattern="[A-Za-z]{.2}" type="text" name="title" placeholder="Engineer"></label>
                             <label>Email
                                 <input type="email" class="required" name="email" placeholder="user@email.com"
                                     required></label>
-                            <label>Cellphone Number &nbsp;&nbsp;
+                            <label>Cell Phone Number &nbsp;&nbsp;
                                 <input type="tel" name="phone" placeholder="###-###-####"></label>
-
                         </fieldset>
 
                         <fieldset>
@@ -128,57 +125,55 @@
                                 </tr>
                                 <tr>
                                     <td>Non-profit ($100)</td>
+                                    <td>&check;</td>
                                     <td></td>
-                                    <td>&times;</td>
-                                    <td>&times;</td>
-                                    <td>&times;</td>
-                                    <td>&times;</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
                                 </tr>
                                 <tr>
                                     <td>Bronze ($200)</td>
+                                    <td>&check;</td>
+                                    <td>&check;</td>
                                     <td></td>
                                     <td></td>
-                                    <td>&times;</td>
-                                    <td>&times;</td>
-                                    <td>&times;</td>
+                                    <td></td>
                                 </tr>
                                 <tr>
                                     <td>Silver ($400)</td>
+                                    <td>&check;</td>
+                                    <td>&check;</td>
+                                    <td>&check;</td>
                                     <td></td>
                                     <td></td>
-                                    <td></td>
-                                    <td>&times;</td>
-                                    <td>&times;</td>
                                 </tr>
                                 <tr>
                                     <td>Gold ($1000)</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
+                                    <td>&check;</td>
+                                    <td>&check;</td>
+                                    <td>&check;</td>
+                                    <td>&check;</td>
+                                    <td>&check;</td>
                                 </tr>
                             </table>
                             <input type="submit" value="Join" class="sbutton">
-
                         </fieldset>
-
-
                     </form>
                 </div>
             </div>
+
+        </main>
+        <script src="js/navigation.js"></script>
+        <footer>
+            <p>
+                &copy; <span id="copyrightyear"></span> | Megan De Le&oacute;n | Utah |
+                <a href="https://www.byui.edu/">BYUI Online Learning
+                </a> | <a href="attributions.html">Attributions</a> |
+                <span id="updated"></span>
+            </p>
+        </footer>
+        <script src="js/getdate.js"></script>
     </div>
-    </main>
-    <script src="js/navigation.js"></script>
-    <footer>
-        <p>
-            &copy; <span id="copyrightyear"></span> | Megan De Le&oacute;n | Utah |
-            <a href="https://www.byui.edu/">BYUI Online Learning
-            </a> | <a href="attributions.html">Attributions</a> |
-            <span id="updated"></span>
-        </p>
-    </footer>
-    <script src="js/getdate.js"></script>
 </body>
 
 </html>
