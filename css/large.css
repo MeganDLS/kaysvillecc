@@ -242,14 +242,9 @@ footer {
   background-color: #C9ADA7;
 }
 
-.join ul {
-  list-style-type: square;
-}
-
 .join li {
   border: none;
   font-size: 1rem;
-  list-style-type: square;
 }
 
 .join h2 {
