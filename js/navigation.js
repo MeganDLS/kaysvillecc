@@ -1,7 +1,7 @@
 // Navigation side bar on every page
 function openNav() {
-  document.getElementById("mySidenav").style.width = "25rem";
-  document.getElementById("scoot").style.marginLeft = "25rem";
+  document.getElementById("mySidenav").style.width = "20rem";
+  document.getElementById("scoot").style.marginLeft = "20rem";
 }
 
 function closeNav() {

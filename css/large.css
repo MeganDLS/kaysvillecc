@@ -25,6 +25,10 @@ h3 {
   text-align: center;
 }
 
+.block {
+  border: 5px dotted #22223B;
+  padding: .3rem;
+}
 /* Heading */
 .title {
   display: grid;
@@ -70,17 +74,8 @@ ul li {
 } */
 
 /* Navigation */
-.active {
-  background-color: #9A8C98;
-}
-
-/* **************************************** */
-.sidenav>.active a:hover {
-  color: #22223B;
-}
-
 #opennav {
-  color: #4A4E69;
+  color: #22223B;
   font-size: 1.8rem;
   margin-bottom: 2rem;
   font-weight: bold;
@@ -116,7 +111,11 @@ ul li {
   transition: 0.3s;
 }
 
-.sidenav a:hover {
+.active {
+  background-color: #9A8C98;
+}
+
+a:hover {
   color: #9A8C98;
 }
 
@@ -128,16 +127,18 @@ ul li {
   margin-left: 1rem;
 }
 
+.active:hover {
+  background-color: #9A8C98;
+  color: #22223B;
+}
+
 #scoot {
   transition: margin-left .5s;
   padding: 1rem;
   color: #2b2b49;
 }
 
-.block {
-  border: 5px dotted #22223B;
-  padding: .3rem;
-}
+
 
 /* Footer  */
 footer {
@@ -169,6 +170,7 @@ footer {
 }
 
 .close {
+  display: none;
   cursor: pointer;
   position: relative;
   padding: .8rem 1rem;
@@ -351,9 +353,12 @@ section h2 {
   font-size: 2rem;
 }
 
+#sbutton:hover {
+  background-color: #C9ADA7;
+  box-shadow: .3rem .3rem .3rem #22223B;
+}
 
 /* Join us */
-
 #joinus {
   text-align: center;
   font-size: 2rem;
