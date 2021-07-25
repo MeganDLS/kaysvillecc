@@ -18,6 +18,8 @@
   <link href="css/large.css" rel="stylesheet" />
   <link href="css/medium.css" rel="stylesheet" />
   <link href="css/small.css" rel="stylesheet" />
+
+  <script defer src="js/lazyload.js"></script>
 </head>
 
 <body>
@@ -77,8 +79,12 @@
             height="325" alt="Pipe Dreams Plumbing logo"></a>
       </div>
       <div class="column">
-
-        <img class="gallerychild" src="images/couple350w.jpg" alt="Sign of mini signs" width="325" height="432">
+        <picture>
+          <source media="(min-width: 31.25em) and (max-width: 49.9em)" srcset="images/right8.jpg">
+            <source srcset="images/right.jpg" media="(min-width: 50em)">
+            <img class="hero" src="images/right4.jpg"
+                alt="Looking down Main street, with cars and trees along the side">
+        </picture>
       </div>
       <div class="column">
         <a href="https://clytieadams.com/"><img class="gallerychild" src="images/ballet.png" width="325" height="325"
@@ -90,7 +96,13 @@
 
     <div class="row">
       <div class="column">
-        <img class="gallerychild" src="images/kiki.jpg" alt="A picture of a family" width="325" height="418">
+        <picture>
+          <source media="(min-width: 31.25em) and (max-width: 49.9em)" srcset="images/left8.jpg">
+            <source srcset="images/left.jpg" media="(min-width: 50em)">
+            <img class="hero" src="images/left4.jpg"
+                alt="Looking down Main street, with cars and trees along the side">
+        </picture>
+        <!-- <img class="gallerychild" src="images/kiki.jpg" alt="A picture of a family" width="325" height="418"> -->
       </div>
       <div id="thisweek" class="column block">
         <h2>This week in Kaysville!</h2>
@@ -136,7 +148,6 @@
 
   </div>
 
-  <script src="js/lazyload.js"></script>
   <script src="js/navigation.js"></script>
   <script src="js/currentconditions.js"></script>
   <script src="js/threeday.js"></script>

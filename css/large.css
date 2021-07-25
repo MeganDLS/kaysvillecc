@@ -69,11 +69,6 @@ ul li {
   position: relative;
 }
 
-/* ul li:hover,
-.close:hover {
-  background-color: #9A8C98;
-} */
-
 /* Navigation */
 .active {
   background-color: #9A8C98;
